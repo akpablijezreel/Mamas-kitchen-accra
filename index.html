@@ -1,64 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mama's Kitchen Accra - Portfolio Demo</title>
-    <style>
-        * {margin:0; padding:0; box-sizing:border-box;}
-        body {font-family: Arial, sans-serif; background:#FFF8E1; color:#333; line-height:1.6;}
-        header {background:#D32F2F; color:white; text-align:center; padding:50px 20px;}
-        header h1 {margin:0; font-size:32px; margin-bottom:10px;}
-        .btn {background:#25D366; color:white; padding:15px 35px; text-decoration:none; border-radius:12px; display:inline-block; margin-top:15px; font-size:18px; font-weight:bold;}
-        section {padding:40px 20px; max-width:900px; margin:auto;}
-        h2 {color:#D32F2F; text-align:center; margin-bottom:25px; font-size:28px;}
-        .menu-item {background:white; padding:18px; margin:12px 0; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); display:flex; justify-content:space-between;}
-        .gallery {display:grid; grid-template-columns:repeat(2,1fr); gap:15px;}
-        .gallery img {width:100%; height:200px; object-fit:cover; border-radius:10px;}
-        .info-box {background:white; padding:20px; border-radius:10px; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.1);}
-        footer {background:#333; color:white; text-align:center; padding:25px 20px; margin-top:30px;}
-        @media(max-width:600px){.gallery{grid-template-columns:1fr;}}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mama's Kitchen Accra</title>
+<style>
+body{font-family:Arial;margin:0;background:#FFF8E1;}
+header{background:#D32F2F;color:white;text-align:center;padding:40px 20px;}
+.btn{background:#25D366;color:white;padding:15px 30px;text-decoration:none;border-radius:10px;display:inline-block;margin-top:10px;}
+section{padding:30px 20px;max-width:800px;margin:auto;}
+h2{color:#D32F2F;text-align:center;}
+.menu{background:white;padding:15px;margin:10px 0;border-radius:8px;}
+.gallery{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+.gallery img{width:45%;border-radius:8px;}
+footer{background:#333;color:white;text-align:center;padding:20px;margin-top:20px;}
+@media(max-width:600px){.gallery img{width:100%;}}
+</style>
 </head>
 <body>
-    <header>
-        <h1>🍲 Mama's Kitchen Accra</h1>
-        <p>Authentic Ghanaian Food - Delivered Hot!</p>
-        <a href="https://wa.me/233598933259" class="btn">Order on WhatsApp</a>
-    </header>
+<header>
+<h1>🍲 Mama's Kitchen Accra</h1>
+<p>Authentic Ghanaian Food</p>
+<a href="https://wa.me/233598933259" class="btn">Order on WhatsApp</a>
+</header>
 
-    <section>
-        <h2>Our Menu</h2>
-        <div class="menu-item"><span><b>Jollof + Chicken</b></span> <span><b>GHS 35</b></span></div>
-        <div class="menu-item"><span><b>Waakye + Fish + Shito</b></span> <span><b>GHS 30</b></span></div>
-        <div class="menu-item"><span><b>Fried Rice + Beef</b></span> <span><b>GHS 28</b></span></div>
-        <div class="menu-item"><span><b>Banku + Tilapia + Okro</b></span> <span><b>GHS 40</b></span></div>
-    </section>
+<section>
+<h2>Our Menu</h2>
+<div class="menu"><b>Jollof + Chicken</b> - GHS 35</div>
+<div class="menu"><b>Waakye + Fish</b> - GHS 30</div>
+<div class="menu"><b>Fried Rice + Beef</b> - GHS 28</div>
+<div class="menu"><b>Banku + Tilapia</b> - GHS 40</div>
+</section>
 
-    <section>
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1604908176997-125e2d4a9b6c?w=600" alt="Jollof">
-            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Waakye Salad">
-            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=600" alt="Fried Rice">
-            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600" alt="Grilled Food">
-        </div>
-    </section>
+<section>
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1604908176997-125e2d4a9b6c?w=500" alt="Jollof">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500" alt="Waakye">
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500" alt="Fried Rice">
+<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500" alt="Banku">
+</div>
+</section>
 
-    <section>
-        <h2>Location & Opening Hours</h2>
-        <div class="info-box">
-            <p><b>📍 Location:</b> Circle, Accra, Ghana</p>
-            <br>
-            <p><b>🕐 Opening Hours:</b></p>
-            <p>Mon - Sat: 8:00AM - 9:00PM</p>
-            <p>Sun: 10:00AM - 6:00PM</p>
-        </div>
-    </section>
+<section>
+<h2>Location & Hours</h2>
+<p><b>Location:</b> Circle, Accra, Ghana</p>
+<p><b>Hours:</b> Mon-Sat 8AM-9PM, Sun 10AM-6PM</p>
+</section>
 
-    <footer>
-        <p>© 2026 Mama's Kitchen Accra</p>
-        <p>Website Built by You | Portfolio Demo</p>
-    </footer>
+<footer>© 2026 Mama's Kitchen | Portfolio Demo by You</footer>
 </body>
 </html>
